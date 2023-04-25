@@ -1,0 +1,30 @@
+<app-home> </app-home> 
+
+<div align="center">
+    <h3> Update Cust Data</h3>
+       <form #updateform="ngForm" (ngSubmit)="updatedata(updateform)">
+   
+           <label for="custid"> Cust ID : </label>
+           <input type="number" id="custid" #custid (ngModel)="custid" name="custid">
+           <br> <br>
+   
+           <label for="custname"> Cust Name : </label>
+           <input type="text" id="custname"  #custname (ngModel)="custname" name="custname">
+           <br> <br>
+   
+           <label for="custmail"> email : </label>
+           <input type="text" id="custmail" name="custmail" #custmail (ngModel)="custmail">
+           <br><br>
+
+           <label for="custmobileno"> mobile no : </label>
+           <input type="number" id="custmobileno" name="custmobileno" #custmobileno (ngModel)="custmobileno">
+           <br><br>
+
+           <label for="custaddress"> customer address : </label>
+           <input type="text" id="custaddress" name="custaddress" #custaddress (ngModel)="custaddress">
+           <br><br>
+   
+           <input type="submit" value="Update">
+   
+       </form>
+   <div>

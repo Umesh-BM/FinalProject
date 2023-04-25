@@ -1,0 +1,17 @@
+<app-home> </app-home> 
+
+<div align="center">
+    <h3> Delete Cust Data</h3>
+       <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+   
+           <label for="custid"> Cust ID : </label>
+           <input type="number" id="custid" #custid (ngModel)="custid" name="custid">
+           <br> <br>
+   
+          
+   
+           <input type="submit" value="Delete">
+   
+       </form>
+    </div>
+   

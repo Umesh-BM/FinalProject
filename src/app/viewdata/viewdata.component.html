@@ -1,0 +1,31 @@
+<app-home> </app-home> 
+
+<div align="center">
+   
+    <table border="1">
+          <thead>
+                    <tr>
+                       <th>Cust ID</th>
+                       <th>Cust Name</th>
+                       <th>Cust Mail</th>
+                       <th>Cust Mobile No</th>
+                       <th>Cust Address</th>
+
+                       
+
+                    </tr>
+          </thead>
+          <tbody>
+                    <tr *ngFor="let d of data">
+                       <td>{{d.custid}}</td>
+                       <td>{{d.custname}}</td>
+                       <td>{{d.custmail}}</td>
+                       <td>{{d.custmobileno}}</td>
+                       <td>{{d.custaddress}}</td>
+                    </tr>
+           </tbody>
+    </table>
+
+
+
+</div>

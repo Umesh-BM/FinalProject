@@ -1,0 +1,32 @@
+<app-home> </app-home> 
+<link rel="stylesheet" href="insert.component.css">
+<div align="center">
+    <h3> Insert Cust Data</h3>
+       <form #insertform="ngForm" (ngSubmit)="insertcustdata(insertform)">
+   
+           <label for="custid"> Cust ID : </label>
+           <input type="number" id="custid" name="custid" #custid (ngModel)="custid">
+           <br> <br>
+   
+           <label for="custname"> Cust Name : </label>
+           <input type="text" id="custname" name="custname" #custname (ngModel)="custname">
+           <br> <br>
+   
+           <label for="custmail"> email : </label>
+           <input type="text" id="custmail" name="custmail" #custmail (ngModel)="custmail">
+           <br><br>
+
+           <label for="custmobileno"> mobile no : </label>
+           <input type="number" id="custmobileno" name="custmobileno" #custmobileno (ngModel)="custmobileno">
+           <br><br>
+
+           <label for="custaddress"> customer address : </label>
+           <input type="text" id="custaddress" name="custaddress" #custaddress (ngModel)="custaddress">
+           <br><br>
+   
+           <input type="submit" value="Insert">
+   
+       </form>
+   <div>
+   
+   
